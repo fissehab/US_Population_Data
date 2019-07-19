@@ -22,7 +22,7 @@ function (y, d = NA, D = NA, max.p = 5, max.q = 5, max.P = 2,
   if (NCOL(x) > 1) {
     stop("auto.arima can only handle univariate time series")
   }
-  orig.x <- x
+  orig.x <- x #test
   missing <- is.na(x)
   firstnonmiss <- head(which(!missing), 1)
   lastnonmiss <- tail(which(!missing), 1)
